@@ -1,5 +1,7 @@
 package interfaces;
 
+import model.Applicant;
+
 public interface ManagerInterface {
-    public void hireCashier();
+    public String hireCashier(Applicant applicant);
 }

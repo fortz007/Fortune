@@ -1,5 +1,7 @@
 package interfaces;
 
 public interface ApplicantInterface {
-    public void applyForCashierPosition();
+    public String apply();
+    public Boolean hasApplied();
+
 }

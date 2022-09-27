@@ -1,4 +1,4 @@
-package com.conveniencestore;
+package model;
 
 public abstract class Person {
     private Integer id;
@@ -46,5 +46,15 @@ public abstract class Person {
 
     public void setContact(String contact) {
         this.contact = contact;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", sex=" + sex +
+                ", contact='" + contact + '\'' +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package com.conveniencestore;
+package model;
 
 public class Product {
     private Integer productId;

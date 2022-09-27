@@ -1,4 +1,4 @@
-package com.conveniencestore;
+package model;
 
 import enums.Role;
 import interfaces.CashierInterface;
@@ -13,12 +13,12 @@ public class Cashier extends Staff implements CashierInterface {
 
 
     @Override
-    public void sellProducts() {
-        System.out.println("Products Sold");
+    public String sellProducts() {
+        return "Products Sold";
     }
 
     @Override
-    public void dispenseReceipts() {
-        System.out.println("Payment successful!");
+    public String dispenseReceipts() {
+        return "Payment successful!";
     }
 }

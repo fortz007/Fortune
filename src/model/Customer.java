@@ -1,4 +1,4 @@
-package com.conveniencestore;
+package model;
 
 import interfaces.CustomerInterface;
 
@@ -11,7 +11,7 @@ public class Customer extends Person implements CustomerInterface {
     }
 
     @Override
-    public void buyProducts() {
-        System.out.println("Product Purchased");
+    public String buyProducts() {
+        return "Product purchased";
     }
 }

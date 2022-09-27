@@ -1,6 +1,6 @@
 package interfaces;
 
 public interface CashierInterface {
-    public void sellProducts();
-    public void dispenseReceipts();
+    public String sellProducts();
+    public String dispenseReceipts();
 }

@@ -1,4 +1,4 @@
-package com.conveniencestore;
+package model;
 
 import enums.Role;
 
@@ -7,6 +7,10 @@ public class Staff extends Person{
 
 
     public Staff() {
+    }
+
+    public Staff(Role role) {
+        this.role = role;
     }
 
     public Staff(Integer id, String name, Character sex, String contact, Role role) {
@@ -26,6 +30,6 @@ public class Staff extends Person{
     public String toString() {
         return "Staff{" +
                 "role=" + role +
-                '}';
+                "} " + super.toString();
     }
 }
