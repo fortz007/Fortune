@@ -11,15 +11,15 @@ class CashierTest {
     @Test
     void sellProducts() {
        String expBuy = cashier.sellProducts();
-       String actBuy = "Product Sold";
+       String actBuy = "Products Sold";
 
         assertEquals(expBuy,actBuy);
     }
 
     @Test
     void dispenseReceipts() {
-        String expBuy = cashier.dispenseReceipts();
-        String actBuy = "Payment Successful";
+        String actBuy = cashier.dispenseReceipts();
+        String expBuy = "Payment successful!";
 
         assertEquals(expBuy,actBuy);
     }
